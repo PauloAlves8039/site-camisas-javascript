@@ -59,5 +59,35 @@ var parametros_pesquisa = {
 }
 
 $(function(){
+    
+    function atualizar_orcamento(parametros) {
+        
+        $(".refresh-loader").show();
 
+        var quantidade  = parametros.quantidade;
+        var preco_unit = camisetas[parametros.cor][parametros.gola][parametros.estampa].preco_unit;
+        var foto = "img/" + camisetas[parametros.cor][parametros.gola][parametros.estampa].foto;
+
+        var valor_total = quantidade * preco_unit;
+
+        if (parametros.qualidade == "q190") {
+            valor_total *= 1.12;
+        }
+
+        if (parametros.embalagem == "unitaria") {
+            valor_total += (quantidade * 0.15);
+        }
+
+        if (quantidade >= 1000) {
+            valor_total += 0.85;
+        }else if (quantidade >= 500) {
+            valor_total += 0.90;
+        }else if (quantidade >= 100) {
+            valor_total += 0.95;
+        }
+
+        console.log(valor_total);
+    }
+
+    atualizar_orcamento(parametros_pesquisa);
 });

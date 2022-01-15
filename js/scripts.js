@@ -101,6 +101,20 @@ $(function(){
         atualizar_orcamento(parametros_pesquisa);
     });
 
+    $("select").change(function () {
+
+        var parametro_select = $(this).attr("id");
+        parametros_pesquisa[parametro_select] = $(this).val();
+        atualizar_orcamento(parametros_pesquisa);
+    });
+
+    $("#quantidade").change(function () {
+
+        var parametro_input = $(this).attr("id");
+        parametros_pesquisa[parametro_input] = $(this).val();
+        atualizar_orcamento(parametros_pesquisa);
+    });
+
 
     atualizar_orcamento(parametros_pesquisa);
 });

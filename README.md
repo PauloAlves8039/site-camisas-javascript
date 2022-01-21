@@ -2,6 +2,10 @@
 Repositório de um projeto para simular uma loja virtual de camisas,código fonte foi baseado no curso
 [Aprenda Javascript, jQuery, Ajax e Json do Zero na Prática](https://www.udemy.com/course/aprenda-javascript-com-facilidade-do-zero/).
 
+## :camera: Screenshot
+
+![screenshot](https://github.com/PauloAlves8039/site-camisas-javascript/blob/master/img/screenshot.png)
+
 ## :wrench: Recursos Utilizados
 
 - [Visual Studio Code v1.62.3](https://code.visualstudio.com/)

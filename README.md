@@ -1,4 +1,4 @@
-# Site Camisas
+<h1 align="center">Site Camisas</h1>
 Repositório de um projeto para simular uma loja virtual de camisas,código fonte foi baseado no curso
 [Aprenda Javascript, jQuery, Ajax e Json do Zero na Prática](https://www.udemy.com/course/aprenda-javascript-com-facilidade-do-zero/).
 
